@@ -19,13 +19,13 @@ AC analysis of a CS amplifier determines gain, bandwidth, impedance using small 
 1. Build the common source amplifier circuit as the circuit diagram using LTspice.
 2. Set the Resistor value as 1K, DC voltage as 1.8V, Gate voltage as 0.9V.
 3. Download the library file tsmc018 (1).txt
-4.Create a folder. Save the library file and LTspice file to the folder.
-5.Import the library file to LTspice using spice directive(.op).
-6.Set the mosfet model name CMOSN as given in the library file, length as 180nm, width as 1uF.
-7.Find the current value for the given power rating.
-8.DC analysis: In edit simulation option, change to dc offset to get list of values obtained from the circuit. We should get the calculated current value in the simulation result.So that we need vary the value of width since width is directly proportional to Drain current(Id) keeping other parameters constant.
-9.Transient analysis: In edit simulation option, change from dc offset to transient. Set the dc offset as 0.9V, Amplitude 50mV, frequency 1KHz. Keep stop time for 3ms and run to get the expected waveform.
-10.AC analysis : In edit simulation option, change from transient to ac analysis. Set type of sweep as decade, number of points per decade as 20, start and stop frequency as 0.1Hz and 1THz to get the expected ac waveform.
+4. Create a folder. Save the library file and LTspice file to the folder.
+5. Import the library file to LTspice using spice directive(.op).
+6. Set the mosfet model name CMOSN as given in the library file, length as 180nm, width as 1uF.
+7. Find the current value for the given power rating.
+8. DC analysis: In edit simulation option, change to dc offset to get list of values obtained from the circuit. We should get the calculated current value in the simulation result.So that we need vary the value of width since width is directly proportional to Drain current(Id) keeping other parameters constant.
+9. Transient analysis: In edit simulation option, change from dc offset to transient. Set the dc offset as 0.9V, Amplitude 50mV, frequency 1KHz. Keep stop time for 3ms and run to get the expected waveform.
+10. AC analysis : In edit simulation option, change from transient to ac analysis. Set type of sweep as decade, number of points per decade as 20, start and stop frequency as 0.1Hz and 1THz to get the expected ac waveform.
 
 ### Calculation :
 Take power as 100 uW 
@@ -38,5 +38,6 @@ Q point will be (Vds,Id)=(1.745 V, 55.5 uA)
 
 ### Simulation results :
 1. DC ANALYSIS :
+   
    
 
