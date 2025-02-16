@@ -38,11 +38,12 @@ Q point will be (Vds,Id)=(1.745 V, 55.5 uA)
 
 ### Simulation results :
 1. DC ANALYSIS :
-
+![Image](https://github.com/user-attachments/assets/8d00be35-329d-438d-976e-ef18719ff9ff)
  Id = 55.5 uA
  Width = 0.203 um
  Vout = 1.745 V
  DC op pnt is (1.745 V, 55.5 uA)
    
+2. TRANSIENT ANALYSIS:
    
 
