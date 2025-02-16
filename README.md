@@ -3,7 +3,7 @@
 ### Components :
 #### n-mosfet(180nm technology node), Resistor-1k,Voltage source(1.8V, 0.9 V),AC ground,wires
 
-### Circuit diagram :
+### Circuit diagram 1:
 ![Image](https://github.com/user-attachments/assets/19efe59d-ee91-4130-871f-cfc8a93bc041)
 
 ### Theory :
@@ -45,5 +45,18 @@ Q point will be (Vds,Id)=(1.745 V, 55.5 uA)
  DC op pnt is (1.745 V, 55.5 uA)
    
 2. TRANSIENT ANALYSIS:
-   
+![Image](https://github.com/user-attachments/assets/0dfea93c-0034-48f8-a49e-d031e4c64883)
 
+3. AC ANALYSIS:
+
+
+### Inference :
+1. To get the desired drain current,we changed the channel width which is directly proportional to drain current.
+2. DC analysis gives the dc operating point and checks whether the mosfet is in saturation region or not.
+3. For time varying AC signal,transient analysis shows the characteristics of the mosfet.
+4. Gaain and frequency is found by AC analysis.
+
+
+### Circuit diagram 2:
+
+   
