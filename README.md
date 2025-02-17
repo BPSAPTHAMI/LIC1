@@ -48,7 +48,7 @@ Q point will be (Vds,Id)=(1.745 V, 55.5 uA)
 ![Image](https://github.com/user-attachments/assets/0dfea93c-0034-48f8-a49e-d031e4c64883)
 
 3. AC ANALYSIS:
-
+![Image](https://github.com/user-attachments/assets/859e1d57-bc9e-42ca-8a92-92aa7a96c4f4)
 
 ### Inference :
 1. To get the desired drain current,we changed the channel width which is directly proportional to drain current.
