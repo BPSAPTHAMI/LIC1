@@ -106,9 +106,11 @@ Q point will be (Vds,Id)=(1.745 V, 55.5 uA)
 
 ### Simulation results:
 1. DC ANALYSIS:
+   ![Image](https://github.com/user-attachments/assets/4d711993-5096-44bc-b7ef-b5ad6d639774)
 2. TRANSIENT ANALYSIS:
-   ![Image](https://github.com/user-attachments/assets/f9e88922-7793-4764-8571-410931d59716)
-4. AC ANALYSIS:
+ ![Image](https://github.com/user-attachments/assets/f9e88922-7793-4764-8571-410931d59716)
+3. AC ANALYSIS:
+![Image](https://github.com/user-attachments/assets/e7445433-d2e2-4908-a342-d055ce811a53)
 ### Inference:
 1. A diode connected mosfet operates in saturation region typically.
 2. The drain current depends on the mosfet's width, other parameters kept constant.
