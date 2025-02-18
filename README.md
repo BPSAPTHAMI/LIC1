@@ -111,11 +111,14 @@ Q point will be (Vds,Id)=(1.745 V, 55.5 uA)
    ![sim1](https://github.com/user-attachments/assets/c2aab848-4340-4c9c-85be-84e64c99d34e)
 
 2. TRANSIENT ANALYSIS:
-    ![sim2](https://github.com/user-attachments/assets/95cfc296-1f59-4527-84c4-62b812a9e472)
 
+![SAP](https://github.com/user-attachments/assets/348ef544-c748-4691-ae13-5c3cabad397b)
+Amplitude of Output peak voltage =92.8 mV
+Amplitude of input peak voltage = 50mV
+Gain=1.84 
 3. AC ANALYSIS:
 ![sim3](https://github.com/user-attachments/assets/e8a98f08-5f6f-4f51-8226-0a733f72f45a)
-
+Gain=6.4 dB
 ### Inference:
 1. A diode connected mosfet operates in saturation region typically.
 2. The drain current depends on the mosfet's width, other parameters kept constant.
