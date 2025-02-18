@@ -46,12 +46,12 @@ Q point will be (Vds,Id)=(1.745 V, 55.5 uA)
    
 2. TRANSIENT ANALYSIS:
   ![Image](https://github.com/user-attachments/assets/5c05fc11-f7d5-4155-a6c6-9ef7cabe6c2d) 
-
+Here, keep sinusoidal signal dc offset as 0.8 V ,amplitude as 50 mV, frequency as 1kHz, AC amplitude as 1 V. In configure analysis, set stop time as 3m seconds.
 3. AC ANALYSIS:
 
 ![acnew](https://github.com/user-attachments/assets/587a8ce2-4ef2-49b6-a335-d9527282b792)
-
-
+Gain =2 dB
+Set type of sweep as decade,number of points per decade as 20,start and stop frequency as 0.1 Hz and 1T Hz to get expected response.
 ### Inference :
 1. To get the desired drain current,we changed the channel width which is directly proportional to drain current.
 2. DC analysis gives the dc operating point and checks whether the mosfet is in saturation region or not.
@@ -109,21 +109,34 @@ Q point will be (Vds,Id)=(1.745 V, 55.5 uA)
 ### Simulation results:
 1. DC ANALYSIS:
    ![sim1](https://github.com/user-attachments/assets/c2aab848-4340-4c9c-85be-84e64c99d34e)
-
-2. TRANSIENT ANALYSIS:
+M1 Width = 300nm
+M2 Width= 590nm
+Length of M1 and M2 is 180nm
+3. TRANSIENT ANALYSIS:
 
 ![SAP](https://github.com/user-attachments/assets/348ef544-c748-4691-ae13-5c3cabad397b)
 Amplitude of Output peak voltage =92.8 mV
 Amplitude of input peak voltage = 50mV
 Gain=1.84 
+Here, keep sinusoidal signal dc offset as 0.8 V ,amplitude as 50 mV, frequency as 1kHz, AC amplitude as 1 V. In configure analysis, set stop time as 3m seconds.
 3. AC ANALYSIS:
 ![sim3](https://github.com/user-attachments/assets/e8a98f08-5f6f-4f51-8226-0a733f72f45a)
 Gain=6.4 dB
+Set type of sweep as decade,number of points per decade as 20,start and stop frequency as 0.1 Hz and 1T Hz to get expected response.
 ### Inference:
 1. A diode connected mosfet operates in saturation region typically.
 2. The drain current depends on the mosfet's width, other parameters kept constant.
 3. DC analysis determines op pnt and confirms saturation mode.
 4. Transient analysis shows the response of the mosfet to time varying signals.
 5. AC analysis gives information about gain and frequency.
+
+   ### Conclusion:
+   Larger Output Swing: Allows better utilization of the supply voltage, enabling a wider output range.
+
+Using a PMOS active load provides self-biasing, making the circuit more stable compared to using a resistor.
+
+Lower Power Consumption: Reduces power dissipation compared to using a resistor.
+
+Replacing a resistor with a PMOS active load significantly improves gain, power efficiency, and frequency response, making it the preferred choice in integrated circuit (IC) amplifiers.
 
    
