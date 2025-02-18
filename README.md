@@ -45,10 +45,12 @@ Q point will be (Vds,Id)=(1.745 V, 55.5 uA)
  DC op pnt is (1.745 V, 55.5 uA)
    
 2. TRANSIENT ANALYSIS:
-   
+  ![Image](https://github.com/user-attachments/assets/5c05fc11-f7d5-4155-a6c6-9ef7cabe6c2d) 
 
 3. AC ANALYSIS:
-![Image](https://github.com/user-attachments/assets/859e1d57-bc9e-42ca-8a92-92aa7a96c4f4)
+
+![acnew](https://github.com/user-attachments/assets/587a8ce2-4ef2-49b6-a335-d9527282b792)
+
 
 ### Inference :
 1. To get the desired drain current,we changed the channel width which is directly proportional to drain current.
@@ -58,7 +60,7 @@ Q point will be (Vds,Id)=(1.745 V, 55.5 uA)
 
 
 ### Circuit diagram 2:
-![Image](https://github.com/user-attachments/assets/4d711993-5096-44bc-b7ef-b5ad6d639774)
+![sim0](https://github.com/user-attachments/assets/a09f8fcb-68e4-48f5-87ee-3f7c23cc5f99)
 
 ### Components:
 NMOSFET,PMOSFET,Voltage supply,AC ground,wires.
@@ -106,11 +108,14 @@ Q point will be (Vds,Id)=(1.745 V, 55.5 uA)
 
 ### Simulation results:
 1. DC ANALYSIS:
-   ![Image](https://github.com/user-attachments/assets/4d711993-5096-44bc-b7ef-b5ad6d639774)
+   ![sim1](https://github.com/user-attachments/assets/c2aab848-4340-4c9c-85be-84e64c99d34e)
+
 2. TRANSIENT ANALYSIS:
- ![Image](https://github.com/user-attachments/assets/f9e88922-7793-4764-8571-410931d59716)
+    ![sim2](https://github.com/user-attachments/assets/95cfc296-1f59-4527-84c4-62b812a9e472)
+
 3. AC ANALYSIS:
-![Image](https://github.com/user-attachments/assets/e7445433-d2e2-4908-a342-d055ce811a53)
+![sim3](https://github.com/user-attachments/assets/e8a98f08-5f6f-4f51-8226-0a733f72f45a)
+
 ### Inference:
 1. A diode connected mosfet operates in saturation region typically.
 2. The drain current depends on the mosfet's width, other parameters kept constant.
