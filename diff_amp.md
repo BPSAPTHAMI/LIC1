@@ -237,4 +237,34 @@ both
 ![Image](https://github.com/user-attachments/assets/d7a85b6e-047f-4b34-b86d-2aa8f8de21f5)
 
 ## Analysis of differential pair amplifier with nMOS:
+DC INITAIL
+![Image](https://github.com/user-attachments/assets/7b5bc347-3add-45e5-9d27-3297dd9f501b)
+DC FINAL
+![Image](https://github.com/user-attachments/assets/27b4df92-eb32-4a15-9f9a-d77ff974a568)
+dc spice
+![Image](https://github.com/user-attachments/assets/905a40e6-fbb7-4c03-ab06-0b513d72ae34)
+tm1
+![Image](https://github.com/user-attachments/assets/e8423d7e-5741-46fc-b832-b74d71a833be)
+tm2
 
+![Image](https://github.com/user-attachments/assets/ff9360d3-c13e-48b2-aeb1-addb3607abe8)
+tboth
+
+![Image](https://github.com/user-attachments/assets/41776980-5bfc-483e-97bf-2869467f2543)
+tgain
+
+![Image](https://github.com/user-attachments/assets/6b89102c-b08e-4b88-8c9f-66cdb304cc12)
+
+acm1
+
+![Image](https://github.com/user-attachments/assets/fec8206e-4a20-4e1f-8f9a-11fb843c39ab)
+acm2
+
+![Image](https://github.com/user-attachments/assets/06e18424-33e5-4be6-a8c4-1042c4b17679)
+acboth
+![Image](https://github.com/user-attachments/assets/5525b5dc-0988-475c-8c52-eecd87cc67f8)
+length m1
+![Image](https://github.com/user-attachments/assets/2e15ef54-678f-4d96-86f6-911c99d7672b)
+lwnth m3
+
+![Image](https://github.com/user-attachments/assets/bafb5d4e-3253-4ecd-b9f1-e56681486190)
