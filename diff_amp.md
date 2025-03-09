@@ -107,56 +107,73 @@ where:
 #### 4. Current Division:
 The total tail current Iss is split between the two MOSFETs in proportion to the difference in their gate-source voltages. 
 Id1+Id2=Iss
-
-
-\[
-I_{\text{D1}} = \frac{I_{\text{tail}}}{2} \left( 1 + \frac{V_{\text{d}}}{V_{\text{T}}} \right)
-\]
-
-\[
-I_{\text{D2}} = \frac{I_{\text{tail}}}{2} \left( 1 - \frac{V_{\text{d}}}{V_{\text{T}}} \right)
-\]
-
-where:
-- **Vd** is the differential input voltage (**Vd = Vg+ - Vg-**),
-- **VT** is the thermal voltage, typically around 26 mV at room temperature.
-
-Thus, the current through each transistor is controlled by the differential input voltage.
+the current through each transistor is controlled by the differential input voltage Vid=Vin1-Vin2
 
 #### 5. Output Voltage:
+The output voltage is taken from the drain of M1 or M2. If we consider the drain voltage of M1, the voltage drop across the load resistor Rd is given by:
+Vout = Vdd-Id1*Rd
 
-The output voltage is taken from the drain of **M1** or **M2**. If we consider the drain voltage of **M1**, the voltage drop across the load resistor **Rc** is:
-
-\[
-V_{\text{out1}} = V_{\text{DD}} - I_{\text{D1}} R_{\text{C}}
-\]
-
-Substituting for **I_D1**:
-
-\[
-V_{\text{out1}} = V_{\text{DD}} - \frac{I_{\text{tail}}}{2} \left( 1 + \frac{V_{\text{d}}}{V_{\text{T}}} \right) R_{\text{C}}
-\]
-
-The output voltage is therefore proportional to the differential input voltage **Vd**. The voltage gain of the amplifier is given by the derivative of the output voltage with respect to the differential input:
-
-\[
-A_v = \frac{V_{\text{out}}}{V_{\text{d}}}
-\]
+The output voltage is therefore proportional to the differential input voltage Vid. The voltage gain of the amplifier is given by the derivative of the output voltage with respect to the differential input.
+Av=Vout/Vid
 
 ### 6. Common-Mode Rejection Ratio (CMRR):
+A key feature of differential amplifiers is their ability to reject common-mode signals. The CMRR measures the ability of the amplifier to reject signals that are common to both inputs (i.e., the same signal appears on both Vgs1 and Vgs2).
 
-A key feature of differential amplifiers is their ability to reject common-mode signals. The **CMRR** measures the ability of the amplifier to reject signals that are common to both inputs (i.e., the same signal appears on both **Vg+** and **Vg-**).
+The CMRR is defined as:
+CMRR = Differential Gain/Common-Mode Gain
 
-The **CMRR** is defined as:
-
-\[
-\text{CMRR} = \frac{\text{Differential Gain}}{\text{Common-Mode Gain}}
-\]
-
-In ideal conditions, the **common-mode gain** should be zero, meaning the amplifier does not respond to common-mode signals. In practice, the CMRR is finite and depends on the matching of the MOSFETs and the symmetry of the circuit.
-
-### 7. Summary:
-
-The **MOSFET differential pair amplifier** amplifies the difference between two input signals while rejecting common-mode signals. It works by splitting a tail current between two MOSFETs based on the difference in their gate-source voltages. The output is a voltage that is proportional to the differential input, and the gain of the amplifier depends on the tail current and load resistors. The differential pair is widely used in operational amplifiers and other circuits where precise, noise-immune amplification is needed.
+In ideal conditions, the common-mode gain should be zero, meaning the amplifier does not respond to common-mode signals. In practice, the CMRR is finite and depends on the matching of the MOSFETs and the symmetry of the circuit.
 
 
+### 7. Definitions
+- Common-mode input voltage:
+  VinCM=Vin1+Vin2
+  
+- Gate-source voltage:
+  Vgs=Vg-Vs
+  
+- Overdrive voltage:
+  Vov = Vgs - Vth  
+where:
+- Vg is the gate voltage.
+- Vs is the source voltage.
+- Vth is the MOSFET threshold voltage.
+
+### 8. Relationship Between VinCM,Vgs and Vov
+The source voltage Vs is determined by the current source Iss in the tail of the differential pair:
+Vs = Vee + VssRs
+where Vee is the 
+For matched transistors, both MOSFETs have the same Vgs, so we can express it in terms of VinCM:
+
+Vgs = VinCM - Vs
+
+Vov = (VinCM-Vs) - Vth
+
+Vov = (VinCM-(Vee + VssRs)) - Vth
+This equation shows how the common-mode input voltage affects the overdrive voltage, which in turn influences transistor operation.
+
+### 9. Common-Mode Input Voltage Range
+For proper operation, the MOSFETs must operate in saturation.
+Vds > Vov
+
+The source voltage is:
+Vs = Vee + VssRs
+
+Thus, the upper limit on VinCM occurs when the MOSFET enters the triode region:
+VinCMmax = Vdd - Vov
+
+The lower limit occurs when the source voltage reaches a point where the transistors turn off:
+VinCMmin = Vs + Vth
+
+### 10. Source Voltage and Its Dependence on VinCM:
+Since the tail current source Iss is shared between both transistors, the source voltage Vs is influenced by VinCM:
+Vs = Vee+ (Iss/2*Rs)
+Vgs = VinCM - (Vee + (Iss/2*Rs))
+Vov = Vgs-Vth
+Vov = (VinCM - (Vee + (Iss/2*Rs))) -Vth
+ This shows that Vov increases with VinCM
+
+### 11. Key Insights
+- Higher VinCM increases Vgs, leading to higher Vov.
+- if VinCM is too high, transistors leave saturation and enter triode mode.
+- if VinCM  is too low, the transistors may turn off.
