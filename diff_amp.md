@@ -205,3 +205,10 @@ Transient gain:
 ![Image](https://github.com/user-attachments/assets/7164147d-327a-41a5-97a8-5d98bdecfc87)
 
 ### AC Analysis:
+M1:
+![Image](https://github.com/user-attachments/assets/1c372a2f-4ecf-4b09-b0e7-c26fffd89937)
+M2:
+![Image](https://github.com/user-attachments/assets/5a29456e-225d-406d-a1d0-fc0fcb703400)
+Both:
+![Image](https://github.com/user-attachments/assets/c4d09f12-da60-4066-8c8d-be56b60be21d)
+
