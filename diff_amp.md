@@ -89,14 +89,14 @@ The differential amplifier amplifies the difference between the two input signal
 #### 3. Mathematical Analysis:
 Assume that both MOSFETs M1 and M2 are identical and operating in the saturation region.
 - The drain current for each MOSFET is given by:
-  Id1=1/2 Kn(Vgs1-Vth)^2
+       Id1=1/2 Kn(Vgs1-Vth)^2
 where:
 - Kn is transconductance parameter
 - Vgs1 is the gate-source voltage of MOSFET M1
 - Vth is the threshold voltage
 
 - For M2,
- Id2=1/2 Kn(Vgs2-Vth)^2
+        Id2=1/2 Kn(Vgs2-Vth)^2
 
 - Vgs1 = Vg1-Vs1 for MOSFET M1
 - Vgs2 = Vg2-Vs2for MOSFET M2
