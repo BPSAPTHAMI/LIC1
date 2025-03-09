@@ -55,23 +55,7 @@ A MOSFET differential pair amplifier is a fundamental building block in analog c
 
 #### 1. Circuit Diagram:
 
-```plaintext
-                Vdd
-                 |
-                 |
-                Rc      Rc
-                 |       |
-           +-----+-----+-----+
-           |                 |
-          (M1)               (M2)
-           | \                | \
-         Vg+  Vg-            Vg+  Vg-
-           |                   |
-           |                   |
-          Rs                  Rs
-           |                   |
-          GND                 GND
-```
+
 
 In the above circuit:
 - M1and M2 are the two MOSFETs that make up the differential pair.
