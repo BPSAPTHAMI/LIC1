@@ -229,4 +229,12 @@ both
 gain
 ![Image](https://github.com/user-attachments/assets/03f479e0-2c71-41b8-a0e9-82978bf9d5ca)
 
+m1
+![Image](https://github.com/user-attachments/assets/fd7404cd-fb30-43b9-8a4c-2e2e414de65b)
+m2
+![Image](https://github.com/user-attachments/assets/8724a273-4048-4180-98d1-81f300982c0f)
+both
+![Image](https://github.com/user-attachments/assets/d7a85b6e-047f-4b34-b86d-2aa8f8de21f5)
+
+## Analysis of differential pair amplifier with nMOS:
 
