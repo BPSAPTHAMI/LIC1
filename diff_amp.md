@@ -53,13 +53,15 @@ A MOSFET differential pair amplifier is a fundamental building block in analog c
 - Comparators: In analog-to-digital conversion, a MOSFET differential pair amplifier can be used in the input stage of a comparator to compare two input voltages and provide a digital output.
 - Signal Processing: The differential pair is used in circuits that process differential signals, such as in instrumentation amplifiers and high-precision analog systems.
 
-#### 1. Circuit Diagram:
+#### 1. Circuit Diagrams:
+##### Differential pair amplifier with resistor Rss
 ![Image](https://github.com/user-attachments/assets/1bc99cbd-3bbf-4b53-ae17-f8eff2eb6f64)
-
+##### Differential pair amplifier with current source Iss
 ![Image](https://github.com/user-attachments/assets/edee8873-0136-40a9-ae43-f50798b9c9c8)
+##### Differential pair amplifier with nMOS
 ![Image](https://github.com/user-attachments/assets/7628e4b4-c367-473f-891f-bb3fb2566847)
 
-In the above circuit:
+In the above circuits:
 - M1and M2 are the two MOSFETs that make up the differential pair.
 - Vin1 and Vin2are the two input signals (differential inputs).
 - Rss is the tail current source, which sets the total current for both MOSFETs.
@@ -163,3 +165,28 @@ Vov = (VinCM - (Vee + (Iss/2*Rs))) -Vth
 - Higher VinCM increases Vgs, leading to higher Vov.
 - if VinCM is too high, transistors leave saturation and enter triode mode.
 - if VinCM  is too low, the transistors may turn off.
+
+## Design Question:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Analysis of differential pair amplifier with resistor Rss
+### DC ANALYSIS:
