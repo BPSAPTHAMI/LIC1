@@ -54,12 +54,12 @@ A MOSFET differential pair amplifier is a fundamental building block in analog c
 - Signal Processing: The differential pair is used in circuits that process differential signals, such as in instrumentation amplifiers and high-precision analog systems.
 
 #### 1. Circuit Diagram:
-
+![Image](https://github.com/user-attachments/assets/1bc99cbd-3bbf-4b53-ae17-f8eff2eb6f64)
 
 
 In the above circuit:
 - M1and M2 are the two MOSFETs that make up the differential pair.
-- Vg1 and Vg2are the two input signals (differential inputs).
+- Vin1 and Vin2are the two input signals (differential inputs).
 - Rss is the tail current source, which sets the total current for both MOSFETs.
 - Rd are the load resistors connected at the drains of the MOSFETs.
 - The output is typically taken from the drain of either M1 or M2.
