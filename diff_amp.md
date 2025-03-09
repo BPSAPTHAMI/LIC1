@@ -190,3 +190,18 @@ Vov = (VinCM - (Vee + (Iss/2*Rs))) -Vth
 
 ## Analysis of differential pair amplifier with resistor Rss
 ### DC ANALYSIS:
+![Image](https://github.com/user-attachments/assets/7b22dcfe-1eae-4461-ab5f-8813790c97d4)
+Device parameters:
+![Image](https://github.com/user-attachments/assets/dba220c2-e972-4a8b-9def-27d0aba2bdcb)
+
+### Transient Analysis:
+M1:
+![Image](https://github.com/user-attachments/assets/ecee44f1-1a85-4d46-9747-2922d181790d)
+M2:
+![Image](https://github.com/user-attachments/assets/36bd8049-fa85-4208-b0d4-a03b76242e67)
+Both:
+![Image](https://github.com/user-attachments/assets/e787a9c0-6c71-487e-a9c2-7d6ca4f4e18e)
+Transient gain:
+![Image](https://github.com/user-attachments/assets/7164147d-327a-41a5-97a8-5d98bdecfc87)
+
+### AC Analysis:
