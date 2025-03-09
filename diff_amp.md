@@ -212,3 +212,21 @@ M2:
 Both:
 ![Image](https://github.com/user-attachments/assets/c4d09f12-da60-4066-8c8d-be56b60be21d)
 
+
+## Analysis of differential pair amplifier with current source Iss:
+dc
+![Image](https://github.com/user-attachments/assets/a6481fc7-8c0d-4de1-b829-3fc921585bce)
+spice
+
+![Image](https://github.com/user-attachments/assets/b0552a2b-4d85-482b-8a07-593481e0b258)
+tm1
+
+![Image](https://github.com/user-attachments/assets/5b13f2ba-5109-4422-a345-74ced121b61e)
+m2
+![Image](https://github.com/user-attachments/assets/0a3fd2ab-500a-4341-a816-6a9d22006ea0)
+both
+![Image](https://github.com/user-attachments/assets/6feb22be-bfeb-45c0-bda5-3be4c1f415f7)
+gain
+![Image](https://github.com/user-attachments/assets/03f479e0-2c71-41b8-a0e9-82978bf9d5ca)
+
+
