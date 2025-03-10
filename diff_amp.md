@@ -167,9 +167,19 @@ Since the tail current source Iss is shared between both transistors, the source
 - if VinCM  is too low, the transistors may turn off.
 
 ## Design Question:
-
-
-
+Design and analyse the differential amplifier for the following specifications.
+Vdd=2.2V, P<=2.2mW, VinCM=1.2 V, VoCM=1.25V, Vp=0.4V
+Perform DC analysis,transient analysis, frequency analysis and extract the parameters.
+- VinCM=Vp+Vgs1
+  - 1.2=0.4+Vgs1
+  - Vgs1=0.8V
+- Iss=P/Vdd
+  - Iss=2.2mW/2.2V
+  - Iss=1mA
+- Id1=Id2=Iss/2=0.5mA
+- Rss=Vp/Iss
+  - Rss=0.4V/1mA
+  - Rss=0.4k ohm
 
 
 
