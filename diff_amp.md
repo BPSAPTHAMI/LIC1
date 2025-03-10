@@ -237,5 +237,18 @@ both
 ![Image](https://github.com/user-attachments/assets/d7a85b6e-047f-4b34-b86d-2aa8f8de21f5)
 
 ## Analysis of differential pair amplifier with nMOS:
-
+dc initial
+![Image](https://github.com/user-attachments/assets/2a45c4bb-4340-4e75-94ba-faf1ec4595ae)
+dc finla
+![Image](https://github.com/user-attachments/assets/83b26bbf-d4d1-4ab2-a98a-ae81638c1287)
+m3 spice
+![Image](https://github.com/user-attachments/assets/0540cd35-dbde-4ca5-8ffc-484cb3baca6c)
+m3 tran sm1
+![Image](https://github.com/user-attachments/assets/2ff4c584-1fc2-45ff-a8bf-98ff74b4f598)
+m3 trans m2
+![Image](https://github.com/user-attachments/assets/cbd1ebbb-0c6e-494f-89b5-14bd2347bd9f)
+m3 trans both
+![Image](https://github.com/user-attachments/assets/984e45c6-dbce-4c5e-99e7-fddc4790e16a)
+m3 trans gain
+![Image](https://github.com/user-attachments/assets/cf0b5243-c35a-4a52-8b8d-57a7212e0038)
 
