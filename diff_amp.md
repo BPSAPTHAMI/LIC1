@@ -115,13 +115,13 @@ In ideal conditions, the common-mode gain should be zero, meaning the amplifier 
 
 ### 7. Definitions
 - Common-mode input voltage:
-  VinCM=Vin1+Vin2
+  --VinCM=Vin1+Vin2
   
 - Gate-source voltage:
-  Vgs=Vg-Vs
+ -- Vgs=Vg-Vs
   
 - Overdrive voltage:
-  Vov = Vgs - Vth  
+ -- Vov = Vgs - Vth  
 where:
 - Vg is the gate voltage.
 - Vs is the source voltage.
