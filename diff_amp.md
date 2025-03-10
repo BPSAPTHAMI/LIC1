@@ -170,16 +170,39 @@ Since the tail current source Iss is shared between both transistors, the source
 Design and analyse the differential amplifier for the following specifications.
 Vdd=2.2V, P<=2.2mW, VinCM=1.2 V, VoCM=1.25V, Vp=0.4V
 Perform DC analysis,transient analysis, frequency analysis and extract the parameters.
-- VinCM=Vp+Vgs1
-  - 1.2=0.4+Vgs1
-  - Vgs1=0.8V
+- VinCM = Vp + Vgs1
+  - 1.2 = 0.4 + Vgs1
+  - Vgs1 = 0.8V
+
+- Assume Vth = 0.36 V
+  - Vov = Vgs - Vth
+  - Vov = 0.8 - 0.36
+  - Vov = 0.44 V
+    
 - Iss=P/Vdd
-  - Iss=2.2mW/2.2V
-  - Iss=1mA
-- Id1=Id2=Iss/2=0.5mA
-- Rss=Vp/Iss
-  - Rss=0.4V/1mA
-  - Rss=0.4k ohm
+  - Iss = 2.2mW/2.2V
+  - Iss = 1mA
+    
+- Id1 = Id2 = Iss/2 = 0.5mA
+ 
+- Rss = Vp/Iss
+  - Rss = 0.4V/1mA
+  - Rss = 0.4k ohm
+ 
+- Vo1 = Vdd - Id*Rd
+  - 1.25V = 2.2 - (0.5m) Rd
+  - Rd = 1.9 k ohm
+
+- gm = 2Id/Vov
+  - gm = (2*0.5m)/0.44
+  - gm = 2.27 mS
+
+- Av = -gm*Rd
+  - Av = -(2.27m)(1.9k)
+  - Av = -4.31 V/V
+    
+
+
 
 
 
