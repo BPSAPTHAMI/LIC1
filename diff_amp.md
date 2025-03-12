@@ -41,17 +41,6 @@ A MOSFET differential pair amplifier is a fundamental building block in analog c
    - Proper biasing is crucial for the MOSFET differential pair to operate in the active region. This is typically done by the tail current source or other biasing circuitry.
    - If the biasing is not set correctly, the MOSFETs might not work efficiently, leading to signal distortion or improper operation.
 
-### Design Considerations:
-- Load Resistors: 
-   - The choice of load resistors affects the output voltage swing and overall gain. In many designs, active loads are preferred because they provide better gain and allow for higher output impedance.
-
-- Gain Setting:
-   - The overall gain of the differential amplifier can be adjusted by the values of the load resistors or by using an additional amplification stage.
-
-### Practical Applications:
-- Operational Amplifiers (Op-Amps: The MOSFET differential pair is a core component in op-amps, where it forms the basis for differential signal amplification.
-- Comparators: In analog-to-digital conversion, a MOSFET differential pair amplifier can be used in the input stage of a comparator to compare two input voltages and provide a digital output.
-- Signal Processing: The differential pair is used in circuits that process differential signals, such as in instrumentation amplifiers and high-precision analog systems.
 
 #### 1. Circuit Diagrams:
 ##### Differential pair amplifier with resistor Rss
@@ -64,7 +53,7 @@ A MOSFET differential pair amplifier is a fundamental building block in analog c
 In the above circuits:
 - M1and M2 are the two MOSFETs that make up the differential pair.
 - Vin1 and Vin2are the two input signals (differential inputs).
-- Rss is the tail current source, which sets the total current for both MOSFETs.
+- Iss is the tail current source, which sets the total current for both MOSFETs.
 - Rd are the load resistors connected at the drains of the MOSFETs.
 - The output is typically taken from the drain of either M1 or M2.
 - Vdd is the supply voltage.
@@ -201,21 +190,12 @@ Perform DC analysis,transient analysis, frequency analysis and extract the param
   - Av = -(2.27m)(1.9k)
   - Av = -4.31 V/V
     
+### Design Considerations:
+- Load Resistors: 
+   - The choice of load resistors affects the output voltage swing and overall gain. In many designs, active loads are preferred because they provide better gain and allow for higher output impedance.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Gain Setting:
+   - The overall gain of the differential amplifier can be adjusted by the values of the load resistors or by using an additional amplification stage.
 
 
 ## Analysis of differential pair amplifier with resistor Rss as load:
@@ -231,7 +211,8 @@ Perform DC analysis,transient analysis, frequency analysis and extract the param
 - VinCMmax= Vdd- (Id*Rd) + Vth= 1.745 V
 - VoutCMmin= Vov1 +Vov3=0.705 V
 - VoutCMmax= Vdd- (Id*Rd)=1.25 V
-Spice output  log:
+
+- Spice output  log:
 - Check all the necessary device parameters and voltage conditions in spice error log.
 ![Image](https://github.com/user-attachments/assets/dba220c2-e972-4a8b-9def-27d0aba2bdcb)
 - Vgs=0.8 V , Vds= 0.85 V , Vth=0.495 V
@@ -319,16 +300,32 @@ Spice output log:
 
 ### Transient Analysis:
 Input and output waveforms of M1:
-
+![Image](https://github.com/user-attachments/assets/9a3b8925-d46e-415e-b5b4-36ef291e9b92)
 Input and output waveforms of M2:
+![Image](https://github.com/user-attachments/assets/bd8683fa-f285-439e-8386-6f1ff90e735b)
+Both
+![Image](https://github.com/user-attachments/assets/357ad05a-aa8c-4da2-8746-a7764d138441)
+Transient gain:
+![Image](https://github.com/user-attachments/assets/a07ac687-6d82-440c-87b6-2ff10b5ff748)
+From simulation, gain=-8.68 V/V
+Therefore, gain is more in this case than the previous cases(-4.31 V/V)
 
-both
-
-m3 trans gain
+### AC Analysis:
+Input and output waveforms of M1:
+![m3 ac m1](https://github.com/user-attachments/assets/f2b649d5-0a89-4fa9-b970-c63f0411295a)
+Input and output waveforms of M1:
+![m3 ac m2](https://github.com/user-attachments/assets/40622e89-ce78-40bf-a4e7-07dc21144e6e)
+Both:
+![m3 ac gain](https://github.com/user-attachments/assets/62caf00d-b1b7-47ae-ba04-eb49dd8ad2c0)
+From simulation, Gain=19.400 dB
+Therefore, gain is more in this case than the previous cases(12.68 dB)
 
 ### Tabular column:
 
 ### Inference:
-
+### Practical Applications:
+- Operational Amplifiers (Op-Amps): The MOSFET differential pair is a core component in op-amps, where it forms the basis for differential signal amplification.
+- Comparators: In analog-to-digital conversion, a MOSFET differential pair amplifier can be used in the input stage of a comparator to compare two input voltages and provide a digital output.
+- Signal Processing: The differential pair is used in circuits that process differential signals, such as in instrumentation amplifiers and high-precision analog systems.
 
 
