@@ -218,61 +218,101 @@ Perform DC analysis,transient analysis, frequency analysis and extract the param
 
 
 
-
-
-
 ## Analysis of differential pair amplifier with resistor Rss as load:
 ### DC ANALYSIS:
+- Connect the components as per the circuit diagram.
+- Calculated Rd and Rss values are set to keep the transistors in saturation region.
+- Rd=1.9 k ohm,Rss=0.4 k ohm
+- To get the required VoCM as 1.25 V,vary the W/L of M1 and M2.
 ![Image](https://github.com/user-attachments/assets/7b22dcfe-1eae-4461-ab5f-8813790c97d4)
-
+- L = 180 nm, W = 6.4125 um for both transistors M1 and M2.
+- Q point (Vds,Id)=(0.85 V,0.5 mA)
+- VinCMmin= Vth+Vp= 0.895 V
+- VinCMmax= Vdd- (Id*Rd) + Vth= 1.745 V
+- VoutCMmin= Vov1 +Vov3=0.705 V
+- VoutCMmax= Vdd- (Id*Rd)=1.25 V
 Error log:
+- Check all the necessary device parameters and voltage conditions in spice error log.
 ![Image](https://github.com/user-attachments/assets/dba220c2-e972-4a8b-9def-27d0aba2bdcb)
+- Vgs=0.8 V , Vds= 0.85 V , Vth=0.495 V
+- Vgs > Vth, Vds > Vov
+- Therefore, transistors M1 AND M2 lie in saturation region.
 
+  
 ### Transient Analysis:
-M1:
+Input and output waveforms M1:
 ![Image](https://github.com/user-attachments/assets/ecee44f1-1a85-4d46-9747-2922d181790d)
-M2:
+Input and output waveforms M2:
 ![Image](https://github.com/user-attachments/assets/36bd8049-fa85-4208-b0d4-a03b76242e67)
 Both:
 ![Image](https://github.com/user-attachments/assets/e787a9c0-6c71-487e-a9c2-7d6ca4f4e18e)
 Transient gain:
 ![Image](https://github.com/user-attachments/assets/7164147d-327a-41a5-97a8-5d98bdecfc87)
+ From simulation, Gain= -4.011 V/V
+ Theoretical gain= -4.31 V/V
 
+ 
 ### AC Analysis:
-M1:
+Input and output waveforms M1:
 ![Image](https://github.com/user-attachments/assets/1c372a2f-4ecf-4b09-b0e7-c26fffd89937)
-M2:
+Input and output waveforms M2:
 ![Image](https://github.com/user-attachments/assets/5a29456e-225d-406d-a1d0-fc0fcb703400)
 Both:
 ![Image](https://github.com/user-attachments/assets/c4d09f12-da60-4066-8c8d-be56b60be21d)
+ From simulation, Gain= 12.145 dB
+ Theoretical gain= 12.68 dB
 
 
 ## Analysis of differential pair amplifier with current source Iss as load:
-dc
+### DC Analysis:
+- Replace the load resistor Rss by a current source Iss.
+- Set the theoretical value of Iss, which is 1 mA.
+- Rd=1.9 k ohm
+- L = 180 nm, W = 6.4125 um for both transistors M1 and M2.
 ![Image](https://github.com/user-attachments/assets/a6481fc7-8c0d-4de1-b829-3fc921585bce)
-spice
-
+  Error log:
 ![Image](https://github.com/user-attachments/assets/b0552a2b-4d85-482b-8a07-593481e0b258)
-tm1
+- Check all the necessary device parameters and voltage conditions in spice error log.
+- Vgs=0.8 V , Vds= 0.85 V , Vth=0.495 V
+- Vgs > Vth, Vds > Vov
+- Therefore, transistors M1 AND M2 lie in saturation region.
 
+### Transient Analysis:
+Input and output waveforms M1:
 ![Image](https://github.com/user-attachments/assets/5b13f2ba-5109-4422-a345-74ced121b61e)
-m2
+Input and output waveforms M2:
 ![Image](https://github.com/user-attachments/assets/0a3fd2ab-500a-4341-a816-6a9d22006ea0)
-both
+Both:
 ![Image](https://github.com/user-attachments/assets/6feb22be-bfeb-45c0-bda5-3be4c1f415f7)
-gain
+Transient gain:
 ![Image](https://github.com/user-attachments/assets/03f479e0-2c71-41b8-a0e9-82978bf9d5ca)
+ From simulation, Gain= -4.011 V/V
+ Theoretical gain= -4.31 V/V
 
-m1
+### AC Analysis:
+Input and output waveforms M1:
 ![Image](https://github.com/user-attachments/assets/fd7404cd-fb30-43b9-8a4c-2e2e414de65b)
-m2
+Input and output waveforms M2:
 ![Image](https://github.com/user-attachments/assets/8724a273-4048-4180-98d1-81f300982c0f)
-both
+Both:
 ![Image](https://github.com/user-attachments/assets/d7a85b6e-047f-4b34-b86d-2aa8f8de21f5)
+ From simulation, Gain= 12.145 dB
+ Theoretical gain= 12.68 dB
 
-## Analysis of differential pair amplifier with MOSFET(load) as a current source:
-dc initial
+
+## Analysis of differential pair amplifier with nMOSFET as a current source(load) :
+### DC Analysis:
+- Replace the current source Iss by a nMOS transistor M3.
+- Connect a voltage source Vb(biasing voltage) which is 0.76 V, to the gate terminal of M3.
+- Vb= Vp + Vth = 0.4 + 0.36 = 0.76 V.
+- Rd=1.9 k ohm
+- L = 180 nm, W = 6.4125 um for transistors M1,M2 and M3.
 ![Image](https://github.com/user-attachments/assets/2a45c4bb-4340-4e75-94ba-faf1ec4595ae)
+Error log:
+
+- Set the theoretical value of Iss, which is 1 mA.
+- Rd=1.9 k ohm,Rss=0.4 k ohm
+- L = 180 nm, W = 6.4125 um for both transistors M1 and M2.
 dc finla
 ![Image](https://github.com/user-attachments/assets/83b26bbf-d4d1-4ab2-a98a-ae81638c1287)
 m3 spice
