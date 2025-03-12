@@ -221,10 +221,11 @@ Perform DC analysis,transient analysis, frequency analysis and extract the param
 
 
 
-## Analysis of differential pair amplifier with resistor Rss
+## Analysis of differential pair amplifier with resistor Rss as load:
 ### DC ANALYSIS:
 ![Image](https://github.com/user-attachments/assets/7b22dcfe-1eae-4461-ab5f-8813790c97d4)
-Device parameters:
+
+Error log:
 ![Image](https://github.com/user-attachments/assets/dba220c2-e972-4a8b-9def-27d0aba2bdcb)
 
 ### Transient Analysis:
@@ -246,7 +247,7 @@ Both:
 ![Image](https://github.com/user-attachments/assets/c4d09f12-da60-4066-8c8d-be56b60be21d)
 
 
-## Analysis of differential pair amplifier with current source Iss:
+## Analysis of differential pair amplifier with current source Iss as load:
 dc
 ![Image](https://github.com/user-attachments/assets/a6481fc7-8c0d-4de1-b829-3fc921585bce)
 spice
@@ -269,7 +270,7 @@ m2
 both
 ![Image](https://github.com/user-attachments/assets/d7a85b6e-047f-4b34-b86d-2aa8f8de21f5)
 
-## Analysis of differential pair amplifier with nMOS:
+## Analysis of differential pair amplifier with MOSFET(load) as a current source:
 dc initial
 ![Image](https://github.com/user-attachments/assets/2a45c4bb-4340-4e75-94ba-faf1ec4595ae)
 dc finla
@@ -284,4 +285,9 @@ m3 trans both
 ![Image](https://github.com/user-attachments/assets/984e45c6-dbce-4c5e-99e7-fddc4790e16a)
 m3 trans gain
 ![Image](https://github.com/user-attachments/assets/cf0b5243-c35a-4a52-8b8d-57a7212e0038)
+### Tabular column:
+
+### Inference:
+
+
 
