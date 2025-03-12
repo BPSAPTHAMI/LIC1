@@ -231,7 +231,7 @@ Perform DC analysis,transient analysis, frequency analysis and extract the param
 - VinCMmax= Vdd- (Id*Rd) + Vth= 1.745 V
 - VoutCMmin= Vov1 +Vov3=0.705 V
 - VoutCMmax= Vdd- (Id*Rd)=1.25 V
-Error log:
+Spice output  log:
 - Check all the necessary device parameters and voltage conditions in spice error log.
 ![Image](https://github.com/user-attachments/assets/dba220c2-e972-4a8b-9def-27d0aba2bdcb)
 - Vgs=0.8 V , Vds= 0.85 V , Vth=0.495 V
@@ -240,9 +240,9 @@ Error log:
 
   
 ### Transient Analysis:
-Input and output waveforms M1:
+Input and output waveforms of M1:
 ![Image](https://github.com/user-attachments/assets/ecee44f1-1a85-4d46-9747-2922d181790d)
-Input and output waveforms M2:
+Input and output waveforms of M2:
 ![Image](https://github.com/user-attachments/assets/36bd8049-fa85-4208-b0d4-a03b76242e67)
 Both:
 ![Image](https://github.com/user-attachments/assets/e787a9c0-6c71-487e-a9c2-7d6ca4f4e18e)
@@ -253,9 +253,9 @@ Transient gain:
 
  
 ### AC Analysis:
-Input and output waveforms M1:
+Input and output waveforms of M1:
 ![Image](https://github.com/user-attachments/assets/1c372a2f-4ecf-4b09-b0e7-c26fffd89937)
-Input and output waveforms M2:
+Input and output waveforms of M2:
 ![Image](https://github.com/user-attachments/assets/5a29456e-225d-406d-a1d0-fc0fcb703400)
 Both:
 ![Image](https://github.com/user-attachments/assets/c4d09f12-da60-4066-8c8d-be56b60be21d)
@@ -270,7 +270,7 @@ Both:
 - Rd=1.9 k ohm
 - L = 180 nm, W = 6.4125 um for both transistors M1 and M2.
 ![Image](https://github.com/user-attachments/assets/a6481fc7-8c0d-4de1-b829-3fc921585bce)
-  Error log:
+  Spice output log:
 ![Image](https://github.com/user-attachments/assets/b0552a2b-4d85-482b-8a07-593481e0b258)
 - Check all the necessary device parameters and voltage conditions in spice error log.
 - Vgs=0.8 V , Vds= 0.85 V , Vth=0.495 V
@@ -278,9 +278,9 @@ Both:
 - Therefore, transistors M1 AND M2 lie in saturation region.
 
 ### Transient Analysis:
-Input and output waveforms M1:
+Input and output waveforms of M1:
 ![Image](https://github.com/user-attachments/assets/5b13f2ba-5109-4422-a345-74ced121b61e)
-Input and output waveforms M2:
+Input and output waveforms of M2:
 ![Image](https://github.com/user-attachments/assets/0a3fd2ab-500a-4341-a816-6a9d22006ea0)
 Both:
 ![Image](https://github.com/user-attachments/assets/6feb22be-bfeb-45c0-bda5-3be4c1f415f7)
@@ -290,9 +290,9 @@ Transient gain:
  Theoretical gain= -4.31 V/V
 
 ### AC Analysis:
-Input and output waveforms M1:
+Input and output waveforms of M1:
 ![Image](https://github.com/user-attachments/assets/fd7404cd-fb30-43b9-8a4c-2e2e414de65b)
-Input and output waveforms M2:
+Input and output waveforms of M2:
 ![Image](https://github.com/user-attachments/assets/8724a273-4048-4180-98d1-81f300982c0f)
 Both:
 ![Image](https://github.com/user-attachments/assets/d7a85b6e-047f-4b34-b86d-2aa8f8de21f5)
@@ -308,24 +308,24 @@ Both:
 - Rd=1.9 k ohm
 - L = 180 nm, W = 6.4125 um for transistors M1,M2 and M3.
 ![Image](https://github.com/user-attachments/assets/2a45c4bb-4340-4e75-94ba-faf1ec4595ae)
-Error log:
+Spice output  log:
 ![Image](https://github.com/user-attachments/assets/a90ab6f6-ae3d-4998-9c1b-559ba9745a5b)
   - Q point variation can be seen here.
   - To set the Q point , changed the channel width of M1, M2 and M3.
   -  L = 180 nm, W = 32.8745 um
-
-dc finla
 ![Image](https://github.com/user-attachments/assets/83b26bbf-d4d1-4ab2-a98a-ae81638c1287)
-m3 spice
-![Image](https://github.com/user-attachments/assets/0540cd35-dbde-4ca5-8ffc-484cb3baca6c)
-m3 tran sm1
+Spice output log:
 ![Image](https://github.com/user-attachments/assets/2ff4c584-1fc2-45ff-a8bf-98ff74b4f598)
-m3 trans m2
-![Image](https://github.com/user-attachments/assets/cbd1ebbb-0c6e-494f-89b5-14bd2347bd9f)
-m3 trans both
-![Image](https://github.com/user-attachments/assets/984e45c6-dbce-4c5e-99e7-fddc4790e16a)
+
+### Transient Analysis:
+Input and output waveforms of M1:
+
+Input and output waveforms of M2:
+
+both
+
 m3 trans gain
-![Image](https://github.com/user-attachments/assets/cf0b5243-c35a-4a52-8b8d-57a7212e0038)
+
 ### Tabular column:
 
 ### Inference:
