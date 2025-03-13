@@ -288,7 +288,7 @@ Both:
 - Vb= Vp + Vth = 0.4 + 0.36 = 0.76 V.
 - Rd=1.9 k ohm
 - L = 180 nm, W = 6.4125 um for transistors M1,M2 and M3.
-![Image](https://github.com/user-attachments/assets/2a45c4bb-4340-4e75-94ba-faf1ec4595ae)
+
 Spice output  log:
 ![Image](https://github.com/user-attachments/assets/a90ab6f6-ae3d-4998-9c1b-559ba9745a5b)
   - Q point variation can be seen here.
