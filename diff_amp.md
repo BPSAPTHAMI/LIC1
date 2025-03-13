@@ -422,22 +422,11 @@ Theoretical gain = 12.68 dB
 5. If W/L is decreased for active loads, gm reduces to maintain q point and constant gain. 
  
 
-## Comparison Table
-
-| Parameter  | Circuit 1 | Circuit 2 | Circuit 3 |
-|------------|------------------|------------------------|---------------|
-| *DC Stability* | Poor | Good | Good |
-| *Gain (Av)* | Low | High | Highest |
-| *Bandwidth* | Low | Higher | Similar to circuit 2 |
-| *Output Impedance* | Low | High | Highest |
-| *CMRR* | Low | High | Highest |
-
-
 ## Conclusion
 
-1. *Resistor Load*: Simple but has lower gain and poor CMRR.  
-2. *Current Source Load*: Higher gain and better bandwidth but requires an additional current source.  
-3. *NMOS Load*: Best choice for high gain, high output resistance, and best CMRR.
+1. Resistor Load: Simple but has lower gain and poor CMRR.  
+2. Current Source Load: Higher gain and better bandwidth but requires an additional current source.  
+3. NMOS Load: Best choice for high gain, high output resistance, and best CMRR.
 
 
 ### Practical Applications:
