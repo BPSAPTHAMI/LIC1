@@ -3,7 +3,23 @@
 ### MOSFET Differential Pair Amplifier Circuit:
 A MOSFET differential pair amplifier is a fundamental building block in analog circuit design, widely used in operational amplifiers (op-amps), comparators, and other signal-processing circuits. It's used for amplifying the difference between two input signals. The differential amplifier amplifies the voltage difference between two input terminals while rejecting any common-mode signals (signals that are common to both inputs). This makes it ideal for applications where the signal is small and needs to be extracted from noise, which might affect both inputs equally.
 
-### Key Components and Operation:
+### Circuit Diagrams:
+##### Differential pair amplifier with resistor Rss
+![Image](https://github.com/user-attachments/assets/1bc99cbd-3bbf-4b53-ae17-f8eff2eb6f64)
+##### Differential pair amplifier with current source Iss
+![Image](https://github.com/user-attachments/assets/edee8873-0136-40a9-ae43-f50798b9c9c8)
+##### Differential pair amplifier with nMOS
+![Image](https://github.com/user-attachments/assets/7628e4b4-c367-473f-891f-bb3fb2566847)
+
+In the above circuits:
+- M1and M2 are the two MOSFETs that make up the differential pair.
+- Vin1 and Vin2are the two input signals (differential inputs).
+- Iss is the tail current source, which sets the total current for both MOSFETs.
+- Rd are the load resistors connected at the drains of the MOSFETs.
+- The output is typically taken from the drain of either M1 or M2.
+- Vdd is the supply voltage.
+- 
+### 1.Key Components and Operation:
 
 1. MOSFETs:
    - The differential pair consists of two MOSFETs (Metal-Oxide-Semiconductor Field-Effect Transistors), typically n-channel MOSFETs are used.
@@ -41,22 +57,6 @@ A MOSFET differential pair amplifier is a fundamental building block in analog c
    - Proper biasing is crucial for the MOSFET differential pair to operate in the active region. This is typically done by the tail current source or other biasing circuitry.
    - If the biasing is not set correctly, the MOSFETs might not work efficiently, leading to signal distortion or improper operation.
 
-
-#### 1. Circuit Diagrams:
-##### Differential pair amplifier with resistor Rss
-![Image](https://github.com/user-attachments/assets/1bc99cbd-3bbf-4b53-ae17-f8eff2eb6f64)
-##### Differential pair amplifier with current source Iss
-![Image](https://github.com/user-attachments/assets/edee8873-0136-40a9-ae43-f50798b9c9c8)
-##### Differential pair amplifier with nMOS
-![Image](https://github.com/user-attachments/assets/7628e4b4-c367-473f-891f-bb3fb2566847)
-
-In the above circuits:
-- M1and M2 are the two MOSFETs that make up the differential pair.
-- Vin1 and Vin2are the two input signals (differential inputs).
-- Iss is the tail current source, which sets the total current for both MOSFETs.
-- Rd are the load resistors connected at the drains of the MOSFETs.
-- The output is typically taken from the drain of either M1 or M2.
-- Vdd is the supply voltage.
 
 #### 2. Operation of the Differential Pair:
 The differential amplifier amplifies the difference between the two input signals Vg1 and Vg2. The total current flowing through the differential pair is set by the tail current source. 
@@ -104,7 +104,9 @@ In ideal conditions, the common-mode gain should be zero, meaning the amplifier 
 
 ### 7. Definitions
 - Common-mode input voltage:
-  - VinCM=Vin1+Vin2
+  - VinCM=(Vin1+Vin2)/2
+  - Here Vin1 = Vin2
+  - Therefore, VinCM = Vin1 = Vin2
   
 - Gate-source voltage:
   - Vgs=Vg-Vs
@@ -204,7 +206,9 @@ Perform DC analysis,transient analysis, frequency analysis and extract the param
 - Calculated Rd and Rss values are set to keep the transistors in saturation region.
 - Rd=1.9 k ohm,Rss=0.4 k ohm
 - To get the required VoCM as 1.25 V,vary the W/L of M1 and M2.
+- 
 ![Image](https://github.com/user-attachments/assets/7b22dcfe-1eae-4461-ab5f-8813790c97d4)
+
 - L = 180 nm, W = 6.4125 um for both transistors M1 and M2.
 - Q point (Vds,Id)=(0.85 V,0.5 mA)
 - VinCMmin= Vth+Vp= 0.895 V
@@ -214,32 +218,50 @@ Perform DC analysis,transient analysis, frequency analysis and extract the param
 
 - Spice output  log:
 - Check all the necessary device parameters and voltage conditions in spice error log.
+- 
 ![Image](https://github.com/user-attachments/assets/dba220c2-e972-4a8b-9def-27d0aba2bdcb)
+
 - Vgs=0.8 V , Vds= 0.85 V , Vth=0.495 V
 - Vgs > Vth, Vds > Vov
 - Therefore, transistors M1 AND M2 lie in saturation region.
 
   
 ### Transient Analysis:
+
 Input and output waveforms of M1:
+
 ![Image](https://github.com/user-attachments/assets/ecee44f1-1a85-4d46-9747-2922d181790d)
+
 Input and output waveforms of M2:
+
 ![Image](https://github.com/user-attachments/assets/36bd8049-fa85-4208-b0d4-a03b76242e67)
+
 Both:
+
 ![Image](https://github.com/user-attachments/assets/e787a9c0-6c71-487e-a9c2-7d6ca4f4e18e)
+
 Transient gain:
+
 ![Image](https://github.com/user-attachments/assets/7164147d-327a-41a5-97a8-5d98bdecfc87)
+
  From simulation, Gain= -4.011 V/V
  Theoretical gain= -4.31 V/V
 
  
 ### AC Analysis:
+
 Input and output waveforms of M1:
+
 ![Image](https://github.com/user-attachments/assets/1c372a2f-4ecf-4b09-b0e7-c26fffd89937)
+
 Input and output waveforms of M2:
+
 ![Image](https://github.com/user-attachments/assets/5a29456e-225d-406d-a1d0-fc0fcb703400)
+
 Both:
+
 ![Image](https://github.com/user-attachments/assets/c4d09f12-da60-4066-8c8d-be56b60be21d)
+
  From simulation, Gain= 12.145 dB
  Theoretical gain= 12.68 dB
 
@@ -250,81 +272,174 @@ Both:
 - Set the theoretical value of Iss, which is 1 mA.
 - Rd=1.9 k ohm
 - L = 180 nm, W = 6.4125 um for both transistors M1 and M2.
+- 
 ![Image](https://github.com/user-attachments/assets/a6481fc7-8c0d-4de1-b829-3fc921585bce)
+
   Spice output log:
+  
 ![Image](https://github.com/user-attachments/assets/b0552a2b-4d85-482b-8a07-593481e0b258)
+
 - Check all the necessary device parameters and voltage conditions in spice error log.
 - Vgs=0.8 V , Vds= 0.85 V , Vth=0.495 V
 - Vgs > Vth, Vds > Vov
 - Therefore, transistors M1 AND M2 lie in saturation region.
 
 ### Transient Analysis:
+
 Input and output waveforms of M1:
+
 ![Image](https://github.com/user-attachments/assets/5b13f2ba-5109-4422-a345-74ced121b61e)
+
 Input and output waveforms of M2:
+
 ![Image](https://github.com/user-attachments/assets/0a3fd2ab-500a-4341-a816-6a9d22006ea0)
+
 Both:
+
 ![Image](https://github.com/user-attachments/assets/6feb22be-bfeb-45c0-bda5-3be4c1f415f7)
+
 Transient gain:
+
 ![Image](https://github.com/user-attachments/assets/03f479e0-2c71-41b8-a0e9-82978bf9d5ca)
+
  From simulation, Gain= -4.011 V/V
  Theoretical gain= -4.31 V/V
 
 ### AC Analysis:
+
 Input and output waveforms of M1:
+
 ![Image](https://github.com/user-attachments/assets/fd7404cd-fb30-43b9-8a4c-2e2e414de65b)
+
 Input and output waveforms of M2:
+
 ![Image](https://github.com/user-attachments/assets/8724a273-4048-4180-98d1-81f300982c0f)
+
 Both:
+
 ![Image](https://github.com/user-attachments/assets/d7a85b6e-047f-4b34-b86d-2aa8f8de21f5)
+
  From simulation, Gain= 12.145 dB
  Theoretical gain= 12.68 dB
 
 
 ## Analysis of differential pair amplifier with nMOSFET as a current source(load) :
+
 ### DC Analysis:
 - Replace the current source Iss by a nMOS transistor M3.
 - Connect a voltage source Vb(biasing voltage) which is 0.76 V, to the gate terminal of M3.
 - Vb= Vp + Vth = 0.4 + 0.36 = 0.76 V.
 - Rd=1.9 k ohm
 - L = 180 nm, W = 6.4125 um for transistors M1,M2 and M3.
+- 
 ![Image](https://github.com/user-attachments/assets/56411f98-e16f-448f-8716-625745a2a0fa)
+
 Spice output  log:
+
 ![Image](https://github.com/user-attachments/assets/0780118a-00ce-47a1-8a6b-f7e7cf808a9b)
 
   - Q point variation can be seen here.
   - To set the Q point , changed the channel width of M3.
   -  L = 180 nm, W = 40.1785 um
+  -  
 ![Image](https://github.com/user-attachments/assets/7494297b-fc13-4396-8437-9cf8ed7fd00e)
+
 Spice output log:
+
 ![Image](https://github.com/user-attachments/assets/c892ef20-e805-4363-bb67-b1cba15a7ba5)
 
 ### Transient Analysis:
 
 Input and output waveforms of M1:
-![Image](https://github.com/user-attachments/assets/9a3b8925-d46e-415e-b5b4-36ef291e9b92)
+
+![Image](https://github.com/user-attachments/assets/6eeeadb6-72e5-4ad8-998f-8395eb81ba50)
+
 Input and output waveforms of M2:
-![Image](https://github.com/user-attachments/assets/bd8683fa-f285-439e-8386-6f1ff90e735b)
-Both
-![Image](https://github.com/user-attachments/assets/357ad05a-aa8c-4da2-8746-a7764d138441)
+
+![Image](https://github.com/user-attachments/assets/4ae0e6e3-a66d-47c1-aec3-6799909f1a63)
+
+Both:
+
+![Image](https://github.com/user-attachments/assets/c875eee2-c1a5-4ecf-9083-5315a041eea5)
+
 Transient gain:
-![Image](https://github.com/user-attachments/assets/a07ac687-6d82-440c-87b6-2ff10b5ff748)
-From simulation, gain=-8.68 V/V
-Therefore, gain is more in this case than the previous cases(-4.31 V/V)
+
+![Image](https://github.com/user-attachments/assets/349c7412-c1e1-4d76-b58a-90f9184a5bf3)
+
+From simulation, gain=-4.013 V/V
+Theoretical gain = -4.31 V/V
 
 ### AC Analysis:
+
 Input and output waveforms of M1:
-![m3 ac m1](https://github.com/user-attachments/assets/f2b649d5-0a89-4fa9-b970-c63f0411295a)
-Input and output waveforms of M1:
-![m3 ac m2](https://github.com/user-attachments/assets/40622e89-ce78-40bf-a4e7-07dc21144e6e)
+
+![Image](https://github.com/user-attachments/assets/8d3a3f4a-5c0b-482e-9355-4bbb84c1eb30)
+
+Input and output waveforms of M2:
+
+![Image](https://github.com/user-attachments/assets/030d5b30-88c1-41ae-ad04-cfbdee227c56)
+
 Both:
-![m3 ac gain](https://github.com/user-attachments/assets/62caf00d-b1b7-47ae-ba04-eb49dd8ad2c0)
-From simulation, Gain=19.400 dB
-Therefore, gain is more in this case than the previous cases(12.68 dB)
+
+![Image](https://github.com/user-attachments/assets/7e605c87-348e-4219-844d-a81cdfeab747)
+
+From simulation, Gain= 12.145 dB
+Theoretical gain = 12.68 dB
+
+## VinCM Analysis:
+- When VinCM = 1.2 V, VoutCM = 1.25 V
+- Now changing VinCM = 1.35 V causes a decrease in VoutCM i.e, 1.034368 V.
+- Id = 0.613 mA.
+![a1 35](https://github.com/user-attachments/assets/5346feb5-6eaa-4756-96a5-6fc182347f9c)
+
+-  Now changing VinCM = 1.05 V causes a increase in VoutCM i.e, 1.47 V.
+-  Id = 0.384 mA.
+![a1 05](https://github.com/user-attachments/assets/445e88ef-b6ae-4d5e-9b08-e3434b6b77a1)
+
+
 
 ### Tabular column:
 
+| *Parameter* | *Circuit 1* | *Circuit 2* | *Circuit 3* |
+|--------------|--------------|--------------|--------------|
+| *Vin1* | 1.2 V | 1.2 V | 1.2 V |
+| *Vin2* | 1.2 | 1.2 V | 1.2 V |
+| *Vout1*  | 1.25V  | 1.25V  | 1.25V  |
+| *Vout2*  | 1.25V  | 1.25V  | 1.25V  |
+| *Vp* | 0.4V | 0.400001V | 0.400001V |
+| *Id(M1)* | 0.000500001 A | 0.0005 A | 0.0005 A |
+| *Id(M2)* | 0.000500001 A | 0.0005 A | 0.0005 A |
+| *Transient gain* | -4.011 V/V | -4.011 V/V | -4.011 V/V |
+| *AC gain* | 12.145 dB | 12.145 dB | 12.145 dB |
+
+
 ### Inference:
+1. Given P<=2.2 mW and Vdd=2.2V ,the total bias current is 1mA, so each transistor operates at Id=0.5mA.
+2. Common-Mode Voltage: The input CM voltage VinCM=1.2 V  and the output CM voltage VoutCM=1.25 V ensuring proper biasing of the mosfet.
+3. Saturation Condition: MOSFETs remain in saturation if Vds>0.4 V .
+   - Vds for all cases is above 0.4V, ensuring proper operation.
+4. If W/L is incresed for resistor load, gm compensates for lower Rd, keeping gain constant.
+5. If W/L is decreased for active loads, gm reduces to maintain q point and constant gain. 
+ 
+
+## Comparison Table
+
+| Parameter  | Circuit 1 | Circuit 2 | Circuit 3 |
+|------------|------------------|------------------------|---------------|
+| *DC Stability* | Poor | Good | Good |
+| *Gain (Av)* | Low | High | Highest |
+| *Bandwidth* | Low | Higher | Similar to circuit 2 |
+| *Output Impedance* | Low | High | Highest |
+| *CMRR* | Low | High | Highest |
+
+
+## Conclusion
+
+1. *Resistor Load*: Simple but has lower gain and poor CMRR.  
+2. *Current Source Load*: Higher gain and better bandwidth but requires an additional current source.  
+3. *NMOS Load*: Best choice for high gain, high output resistance, and best CMRR.
+
+
 ### Practical Applications:
 - Operational Amplifiers (Op-Amps): The MOSFET differential pair is a core component in op-amps, where it forms the basis for differential signal amplification.
 - Comparators: In analog-to-digital conversion, a MOSFET differential pair amplifier can be used in the input stage of a comparator to compare two input voltages and provide a digital output.
