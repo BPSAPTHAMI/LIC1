@@ -288,17 +288,19 @@ Both:
 - Vb= Vp + Vth = 0.4 + 0.36 = 0.76 V.
 - Rd=1.9 k ohm
 - L = 180 nm, W = 6.4125 um for transistors M1,M2 and M3.
-
+![Image](https://github.com/user-attachments/assets/56411f98-e16f-448f-8716-625745a2a0fa)
 Spice output  log:
-![Image](https://github.com/user-attachments/assets/a90ab6f6-ae3d-4998-9c1b-559ba9745a5b)
+![Image](https://github.com/user-attachments/assets/0780118a-00ce-47a1-8a6b-f7e7cf808a9b)
+
   - Q point variation can be seen here.
-  - To set the Q point , changed the channel width of M1, M2 and M3.
-  -  L = 180 nm, W = 32.8745 um
-![Image](https://github.com/user-attachments/assets/83b26bbf-d4d1-4ab2-a98a-ae81638c1287)
+  - To set the Q point , changed the channel width of M3.
+  -  L = 180 nm, W = 40.1785 um
+![Image](https://github.com/user-attachments/assets/7494297b-fc13-4396-8437-9cf8ed7fd00e)
 Spice output log:
-![Image](https://github.com/user-attachments/assets/2ff4c584-1fc2-45ff-a8bf-98ff74b4f598)
+![Image](https://github.com/user-attachments/assets/c892ef20-e805-4363-bb67-b1cba15a7ba5)
 
 ### Transient Analysis:
+
 Input and output waveforms of M1:
 ![Image](https://github.com/user-attachments/assets/9a3b8925-d46e-415e-b5b4-36ef291e9b92)
 Input and output waveforms of M2:
