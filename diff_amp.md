@@ -332,39 +332,39 @@ Both:
 - Rd=1.9 k ohm
 - L = 180 nm, W = 6.4125 um for transistors M1,M2 and M3.
 - 
-![Image](https://github.com/user-attachments/assets/56411f98-e16f-448f-8716-625745a2a0fa)
+- ![a1 initial](https://github.com/user-attachments/assets/5e3951a5-6bd7-415a-8256-386a325c8f78)
 
 Spice output  log:
-
-![Image](https://github.com/user-attachments/assets/0780118a-00ce-47a1-8a6b-f7e7cf808a9b)
+![a1 initial spice](https://github.com/user-attachments/assets/0ac7078a-2794-495b-9459-f09b21f6514c)
 
   - Q point variation can be seen here.
   - To set the Q point , changed the channel width of M3.
-  -  L = 180 nm, W = 40.1785 um
-  -  
-![Image](https://github.com/user-attachments/assets/7494297b-fc13-4396-8437-9cf8ed7fd00e)
+  -  L = 180 nm, W = 55.767 um
+  -  ![a1 final](https://github.com/user-attachments/assets/cec0c0d7-4fcf-4064-a3b0-bb1104777a49)
+
 
 Spice output log:
-
-![Image](https://github.com/user-attachments/assets/c892ef20-e805-4363-bb67-b1cba15a7ba5)
+![a1 final spice](https://github.com/user-attachments/assets/b7bfb95e-8a4e-4b50-bdfd-0c868c1d6e32)
 
 ### Transient Analysis:
 
 Input and output waveforms of M1:
 
-![Image](https://github.com/user-attachments/assets/6eeeadb6-72e5-4ad8-998f-8395eb81ba50)
+![a1 trans m1](https://github.com/user-attachments/assets/f60bcc8a-53c5-40e9-8cfe-b730f24ed545)
 
 Input and output waveforms of M2:
 
-![Image](https://github.com/user-attachments/assets/4ae0e6e3-a66d-47c1-aec3-6799909f1a63)
+![a1 trans m2](https://github.com/user-attachments/assets/dd906c30-d83d-4b85-ac92-765cf363e2b9)
+
 
 Both:
 
-![Image](https://github.com/user-attachments/assets/c875eee2-c1a5-4ecf-9083-5315a041eea5)
+![a1 trans both](https://github.com/user-attachments/assets/3255d7f2-3b20-428b-bb46-4ee5a62edf59)
 
 Transient gain:
 
-![Image](https://github.com/user-attachments/assets/349c7412-c1e1-4d76-b58a-90f9184a5bf3)
+![a1 trans gain](https://github.com/user-attachments/assets/d7a824bb-7c12-4fdf-a0cd-9e29e328cd93)
+
 
 From simulation, gain=-4.013 V/V
 Theoretical gain = -4.31 V/V
@@ -373,15 +373,18 @@ Theoretical gain = -4.31 V/V
 
 Input and output waveforms of M1:
 
-![Image](https://github.com/user-attachments/assets/8d3a3f4a-5c0b-482e-9355-4bbb84c1eb30)
+![a1 ac m1](https://github.com/user-attachments/assets/229b5d57-86f5-41cd-be17-fd3464fe9ada)
+Gain=12.145 dB
 
 Input and output waveforms of M2:
 
-![Image](https://github.com/user-attachments/assets/030d5b30-88c1-41ae-ad04-cfbdee227c56)
+![a1 ac m2](https://github.com/user-attachments/assets/139ad78e-db87-4803-8d97-efd6d86783d2)
+Gain=12.145 dB
 
 Both:
 
-![Image](https://github.com/user-attachments/assets/7e605c87-348e-4219-844d-a81cdfeab747)
+![a1 ac gain](https://github.com/user-attachments/assets/37243f55-3df2-4945-b466-c8a53a9991fc)
+
 
 From simulation, Gain= 12.145 dB
 Theoretical gain = 12.68 dB
@@ -409,7 +412,7 @@ Theoretical gain = 12.68 dB
 | *Vp* | 0.4V | 0.400001V | 0.400001V |
 | *Id(M1)* | 0.000500001 A | 0.0005 A | 0.0005 A |
 | *Id(M2)* | 0.000500001 A | 0.0005 A | 0.0005 A |
-| *Transient gain* | -4.011 V/V | -4.011 V/V | -4.011 V/V |
+| *Transient gain* | -4.011 V/V | -4.011 V/V | -4.013 V/V |
 | *AC gain* | 12.145 dB | 12.145 dB | 12.145 dB |
 
 
