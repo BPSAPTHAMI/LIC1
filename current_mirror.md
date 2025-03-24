@@ -70,7 +70,7 @@ hence,
 ![aa11t](https://github.com/user-attachments/assets/0aa87496-1c6a-422a-bc25-5b5f6feb679c)
 ### AC ANALYSIS:
 ![aa11ac](https://github.com/user-attachments/assets/47bcea71-6256-4e6f-b0e9-815801001c2d)
-
+Gain= 29.03 dB
 
 ## Current mirror - Aspect ratio 1:2 
 ### DC ANALYSIS:
@@ -102,7 +102,7 @@ hence,
 ![aa12t](https://github.com/user-attachments/assets/c790a035-60b9-44ae-8345-f44a1474363f)
 ### AC ANALYSIS:
 ![aa11ac](https://github.com/user-attachments/assets/a0a01439-67e5-4d9e-91d7-cd402f895f72)
-
+Gain=29.048 dB
 
 
 ## Current mirror - Aspect ratio 1:3
@@ -136,7 +136,7 @@ hence,
 
 ### AC ANALYSIS:
 ![aa13ac](https://github.com/user-attachments/assets/52a9c7c5-c573-408c-8a15-fdcaa0f2ff0f)
-
+Gain= 29.045 dB
 
 
 ## Current mirror - Aspect ratio 1:4
@@ -170,7 +170,7 @@ hence,
 
 ### AC ANALYSIS:
 ![aa14ac](https://github.com/user-attachments/assets/03c357ad-217f-493c-bea3-624470a9eac4)
-
+Gain= 29.01 dB
 
 
 
@@ -206,7 +206,15 @@ hence,
 
 ### AC ANALYSIS:
 ![aa14ac](https://github.com/user-attachments/assets/ec30c9e8-ef95-4737-ba7d-15b7b23c3821)
+Gain= 29.045 dB
 
+| Aspect ratio | Iref | Vx | Vout |
+|------|----|----|------|
+|  iuh | B1 | C1 | D1  |
+|  A2  | B2 | C2 | D2  |
+|  A3  | B3 | C3 | D3  |
+|  A4  | B4 | C4 | D4  |
+|  A5  | B5 | C5 | D5  |
 
 
 
