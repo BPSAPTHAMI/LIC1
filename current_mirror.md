@@ -43,6 +43,29 @@ Iref =Ix = Itotal/2 = 0.28mA
 ## Current mirror - Aspect ratio 1:1 
 ### DC ANALYSIS:
 ![aa11](https://github.com/user-attachments/assets/7c034319-a0e6-4f41-9da4-b1dc6ba17c8e)
+Itotal=Iref+Ix
+
+For 1:1 aspect ratio Iref=Ix
+
+Itotal = Iref + Iref
+
+Iref=Itotal/2
+
+Itotal=P/Vdd
+
+Itotal=1mW/1.8V
+
+Itotal=0.555mA.
+
+Therefore,Iref=0.277mA.
+
+The aspect ratio of MOSFET M2 is same as that of M3
+
+hence,
+- W/L for M1 is 101.5um/180nm 
+- W/L for M2 is 101.5um/180nm
+- W/L for M3 is 101.5um/180nm
+  
 ### TRANSIENT ANALYSIS:
 ![aa11t](https://github.com/user-attachments/assets/0aa87496-1c6a-422a-bc25-5b5f6feb679c)
 ### AC ANALYSIS:
@@ -52,6 +75,29 @@ Iref =Ix = Itotal/2 = 0.28mA
 ## Current mirror - Aspect ratio 1:2 
 ### DC ANALYSIS:
 ![Screenshot 2025-03-24 182725](https://github.com/user-attachments/assets/7969c055-7295-4f94-b7b8-05aa36243f18)
+Itotal=Iref+Ix
+
+For 1:2 aspect ratio 2*Iref=Ix
+
+Itotal = Iref + 2*Iref
+
+Iref=Itotal/3
+
+Itotal=P/Vdd
+
+Itotal=1mW/1.8V
+
+Itotal=0.555mA.
+
+Therefore,Iref=0.185mA.
+
+The aspect ratio of MOSFET M2 is twice of M3
+
+hence,
+- W/L for M1 is 133um/180nm 
+- W/L for M2 is 203um/180nm
+- W/L for M3 is 101.5um/180nm
+- 
 ### TRANSIENT ANALYSIS:
 ![aa12t](https://github.com/user-attachments/assets/c790a035-60b9-44ae-8345-f44a1474363f)
 ### AC ANALYSIS:
@@ -62,6 +108,28 @@ Iref =Ix = Itotal/2 = 0.28mA
 ## Current mirror - Aspect ratio 1:3
 ### DC ANALYSIS:
 ![aa13dc](https://github.com/user-attachments/assets/54000202-b7f0-4caa-8d2a-7a13ae541d88)
+Itotal=Iref+Ix
+
+For 1:3 aspect ratio 3*Iref=Ix
+
+Itotal = Iref + 3*Iref
+
+Iref=Itotal/4
+
+Itotal=P/Vdd
+
+Itotal=1mW/1.8V
+
+Itotal=0.555mA.
+
+Therefore,Iref=0.1388mA.
+
+The aspect ratio of MOSFET M2 is thrice of M3
+
+hence,
+- W/L for M1 is 150um/180nm 
+- W/L for M2 is 304.5um/180nm
+- W/L for M3 is 101.5um/180nm
 
 ### TRANSIENT ANALYSIS:
 ![aa13t](https://github.com/user-attachments/assets/13a3be28-e5ff-4ba6-8006-ea52ba3f945c)
@@ -74,6 +142,28 @@ Iref =Ix = Itotal/2 = 0.28mA
 ## Current mirror - Aspect ratio 1:4
 ### DC ANALYSIS:
 ![aa14dc](https://github.com/user-attachments/assets/7165123e-bfe7-40a5-aa79-5320ade591e9)
+Itotal=Iref+Ix
+
+For 1:4 aspect ratio 4*Iref=Ix
+
+Itotal = Iref + 4*Iref
+
+Iref=Itotal/5
+
+Itotal=P/Vdd
+
+Itotal=1mW/1.8V
+
+Itotal=0.555mA.
+
+Therefore,Iref=0.111mA.
+
+The aspect ratio of MOSFET M2 is four times of M3
+
+hence,
+- W/L for M1 is 158.4um/180nm 
+- W/L for M2 is 406um/180nm
+- W/L for M3 is 101.5um/180nm
 
 ### TRANSIENT ANALYSIS:
 ![aa14t](https://github.com/user-attachments/assets/be1217b3-1f58-4b04-a09a-da07b32199df)
@@ -87,6 +177,29 @@ Iref =Ix = Itotal/2 = 0.28mA
 ## Current mirror - Aspect ratio 2:1
 ### DC ANALYSIS:
 ![aa21dc](https://github.com/user-attachments/assets/6e885d95-3ef9-4b14-9049-b4bb10e616c8)
+Itotal=Iref+Ix
+
+For 2:1 aspect ratio 0.5*Iref=Ix
+
+Itotal = Iref + 0.5*Iref
+
+Iref=Itotal/1.5
+
+Itotal=P/Vdd
+
+Itotal=1mW/1.8V
+
+Itotal=0.555mA.
+
+Therefore,Iref=0.0.37mA.
+
+The aspect ratio of MOSFET M2 is half of M3
+
+hence,
+- W/L for M1 is 66.8um/180nm 
+- W/L for M2 is 101.5um/180nm
+- W/L for M3 is 203um/180nm
+
 
 ### TRANSIENT ANALYSIS:
 ![aa21t](https://github.com/user-attachments/assets/8d5b6629-e118-4efb-b73b-9dff48b81745)
