@@ -40,6 +40,36 @@ Itotal= 𝐼ref+𝐼x
 
 Iref =Ix = Itotal/2 = 0.28mA 
 
+## Current mirror - Aspect ratio 1:1 
+### DC ANALYSIS:
+![aa11](https://github.com/user-attachments/assets/7c034319-a0e6-4f41-9da4-b1dc6ba17c8e)
+### TRANSIENT ANALYSIS:
+![aa11t](https://github.com/user-attachments/assets/0aa87496-1c6a-422a-bc25-5b5f6feb679c)
+### AC ANALYSIS:
+![aa11ac](https://github.com/user-attachments/assets/47bcea71-6256-4e6f-b0e9-815801001c2d)
+
+
+## Current mirror - Aspect ratio 1:2 
+### DC ANALYSIS:
+
+### TRANSIENT ANALYSIS:
+### AC ANALYSIS:
+
+
+
+## Current mirror - Aspect ratio 1:3
+### DC ANALYSIS:
+
+### TRANSIENT ANALYSIS:
+### AC ANALYSIS:
+
+
+
+## Current mirror - Aspect ratio 1:4
+### DC ANALYSIS:
+
+### TRANSIENT ANALYSIS:
+### AC ANALYSIS:
 
 
 
