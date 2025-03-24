@@ -228,7 +228,48 @@ Gain= 29.045 dB
 | 2:1   | 66.8 um | 101.5um | 203um  |
 - length= 180 nm
 
+## Inference:
 
+- The reference current (Iref) changes based on the aspect ratio.
+
+As the ratio increases (1:1 → 1:4), Iref decreases, meaning less current flows.
+
+In the 2:1 case, Iref is the highest, showing that more current is being mirrored.
+
+
+- The output voltage (Vout) stays almost the same for all ratios.
+
+
+- The transistors (M1, M2, M3) are sized differently to match the aspect ratio and control current flow.
+
+M2, which copies the current, gets bigger as the ratio increases.
+
+M3 stays the same in most cases, except for the 2:1 ratio, where it is larger, allowing it to handle more current.
+
+
+- The minor difference between Vx and Vout across ratios suggests voltage drops due to drain-source resistance or mobility variations.
+
+The deviation in 1:3 (Vx = 1.24655V, Vout = 1.24099V) indicates a small mismatch possibly due to process variations or short-channel effects.
+
+
+
+- The 2:1 ratio gives the highest current (0.37mA) because the transistors are sized to allow more current flow.
+
+This setup is useful when the circuit needs to drive more current.
+
+
+
+
+
+
+
+## PART B
+
+### DC ANALYSIS:
+
+### TRANSIENT ANALYSIS:
+
+### AC ANALYSIS:
 
 
 
