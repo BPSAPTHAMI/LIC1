@@ -208,13 +208,25 @@ hence,
 ![aa14ac](https://github.com/user-attachments/assets/ec30c9e8-ef95-4737-ba7d-15b7b23c3821)
 Gain= 29.045 dB
 
+
+## comparison table:
+
 | Aspect ratio | Iref | Vx | Vout |
 |------|----|----|------|
-|  iuh | B1 | C1 | D1  |
-|  A2  | B2 | C2 | D2  |
-|  A3  | B3 | C3 | D3  |
-|  A4  | B4 | C4 | D4  |
-|  A5  | B5 | C5 | D5  |
+|  1:1 | 0.277mA | 1.20712 V | 1.2084 V  |
+|  1:2 | 0.185mA | 1.23094 V | 1.23876 V  |
+|  1:3  | 0.1388 mA | 1.24655 V | 1.24099 V |
+|  1:4  |0.111mA | 1.25816 V | 1.25824 V  |
+|  2:1  | 0.37 mA | 1.23085 V | 1.23166 V  |
+
+| Aspect ratio | M1(W) | M2(W) | M3(W) | 
+|------|----|----|------|
+| 1:1   | 101.5um | 101.5um | 101.5um  |
+| 1:2   | 133um | 203um | 101.5um  |
+| 1:3   | 150um | 304.5um | 101.5um  |
+| 1:4   | 158.4um | 406um| 101.5um  |
+| 2:1   | 66.8 um | 101.5um | 203um  |
+- length= 180 nm
 
 
 
