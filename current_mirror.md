@@ -40,12 +40,12 @@ Itotal= 𝐼ref+𝐼x
 
 Iref =Ix = Itotal/2 = 0.28mA 
 
-## Current mirror - Aspect ratio 1:1 
+## Current mirror -  ratio 1:1 
 ### DC ANALYSIS:
 ![aa11](https://github.com/user-attachments/assets/7c034319-a0e6-4f41-9da4-b1dc6ba17c8e)
 Itotal=Iref+Ix
 
-For 1:1 aspect ratio Iref=Ix
+For 1:1 ratio Iref=Ix
 
 Itotal = Iref + Iref
 
@@ -72,12 +72,12 @@ hence,
 ![aa11ac](https://github.com/user-attachments/assets/47bcea71-6256-4e6f-b0e9-815801001c2d)
 Gain= 29.03 dB
 
-## Current mirror - Aspect ratio 1:2 
+## Current mirror - ratio 1:2 
 ### DC ANALYSIS:
 ![Screenshot 2025-03-24 182725](https://github.com/user-attachments/assets/7969c055-7295-4f94-b7b8-05aa36243f18)
 Itotal=Iref+Ix
 
-For 1:2 aspect ratio 2*Iref=Ix
+For 1:2 ratio 2*Iref=Ix
 
 Itotal = Iref + 2*Iref
 
@@ -105,12 +105,12 @@ hence,
 Gain=29.048 dB
 
 
-## Current mirror - Aspect ratio 1:3
+## Current mirror - ratio 1:3
 ### DC ANALYSIS:
 ![aa13dc](https://github.com/user-attachments/assets/54000202-b7f0-4caa-8d2a-7a13ae541d88)
 Itotal=Iref+Ix
 
-For 1:3 aspect ratio 3*Iref=Ix
+For 1:3 ratio 3*Iref=Ix
 
 Itotal = Iref + 3*Iref
 
@@ -139,12 +139,12 @@ hence,
 Gain= 29.045 dB
 
 
-## Current mirror - Aspect ratio 1:4
+## Current mirror - ratio 1:4
 ### DC ANALYSIS:
 ![aa14dc](https://github.com/user-attachments/assets/7165123e-bfe7-40a5-aa79-5320ade591e9)
 Itotal=Iref+Ix
 
-For 1:4 aspect ratio 4*Iref=Ix
+For 1:4 ratio 4*Iref=Ix
 
 Itotal = Iref + 4*Iref
 
@@ -174,12 +174,12 @@ Gain= 29.01 dB
 
 
 
-## Current mirror - Aspect ratio 2:1
+## Current mirror - ratio 2:1
 ### DC ANALYSIS:
 ![aa21dc](https://github.com/user-attachments/assets/6e885d95-3ef9-4b14-9049-b4bb10e616c8)
 Itotal=Iref+Ix
 
-For 2:1 aspect ratio 0.5*Iref=Ix
+For 2:1 ratio 0.5*Iref=Ix
 
 Itotal = Iref + 0.5*Iref
 
@@ -211,7 +211,7 @@ Gain= 29.045 dB
 
 ## comparison table:
 
-| Aspect ratio | Iref | Vx | Vout |
+| Ratio | Iref | Vx | Vout |
 |------|----|----|------|
 |  1:1 | 0.277mA | 1.20712 V | 1.2084 V  |
 |  1:2 | 0.185mA | 1.23094 V | 1.23876 V  |
@@ -219,7 +219,7 @@ Gain= 29.045 dB
 |  1:4  |0.111mA | 1.25816 V | 1.25824 V  |
 |  2:1  | 0.37 mA | 1.23085 V | 1.23166 V  |
 
-| Aspect ratio | M1(W) | M2(W) | M3(W) | 
+| Ratio | M1(W) | M2(W) | M3(W) | 
 |------|----|----|------|
 | 1:1   | 101.5um | 101.5um | 101.5um  |
 | 1:2   | 133um | 203um | 101.5um  |
