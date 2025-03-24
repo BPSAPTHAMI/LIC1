@@ -12,11 +12,24 @@ Better current matching → Less dependence on variations in supply voltage.
 ## Design question
 
  ![image](https://github.com/user-attachments/assets/e2d73e61-9f25-4349-953c-d155459e57b7)
+- Design and analyse current mirror circuit as active load in amplifier circuit. 
 
-Gain: 𝐴𝑣>-10𝑉/𝑉 or >=20dB
-​𝑉dd=1.8𝑉
-Power 𝑃<1𝑚𝑊
-Current Mirror Ratio: 1:1 , 1:2 ,1:3,1:4,2:1
+A)
+ i) Design for Av<=-10V/V
+- Vdd=1.8V
+- p<=1mW
+- Design for current mirror ratio 1:1 , 1:2.
+
+- ii) Analysis the current mirror circuit(DC analysis)
+- iii)- case 1) L=180n (W/L)=x
+  - case 2) L=500n (W/L)= x
+  - case 3) L=1u (W/L)=x
+- iv) Transient and AC analysis: Max output swing and bandwidth.
+- Vary the current mirror ratio and analyse the current mirroring.
+
+B)
+- Design the differential amplifer using the same design specification as experiment 3.
+- Perform DC analysis, Transient and AC analysis.
 
 
 Given: 𝑃total<1𝑚𝑊,  𝑉𝐷𝐷=1.8𝑉
