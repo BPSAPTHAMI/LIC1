@@ -235,9 +235,21 @@ Gain= 29.045 dB
 - Width of M1 is 193 um.
 
   ### AC ANALYSIS:
-  
+  ![image](https://github.com/user-attachments/assets/6d36ce2c-fc4a-4d49-87e7-98db310323da)
+  - Gain=37.754 dB
 
 
+## 1:1 ratio for length 1um:
+ ### DC ANALYSIS:
+![image](https://github.com/user-attachments/assets/1b13736f-040f-4771-a5c9-b139feb1c952)
+- Width of M3,M2 is 101.5 um.
+- Width of M1 is 230 um.
+
+  ### AC ANALYSIS:
+![image](https://github.com/user-attachments/assets/b9573f25-dd23-4963-90b0-588b47845dbe)
+ - Gain= 40.28 dB
+
+ - 
 ## Inference:
 
 - The reference current (Iref) changes based on the aspect ratio.
@@ -271,8 +283,6 @@ This setup is useful when the circuit needs to drive more current.
 
 
 
-
-
 ## PART B
 
 ### DC ANALYSIS:
@@ -285,10 +295,10 @@ This setup is useful when the circuit needs to drive more current.
 ![aachi33](https://github.com/user-attachments/assets/b3d6cc4a-8612-4ff5-9591-8c74b4208729)
 Gain=33.31 dB
 
-## Inference:
-
-
-
+## Inference: 
+- current mirroring is not perfect because of channel length effects.  
+- The gain increases as the current mirror ratio increases.
+- The gain reaches a maximum value of 33.31 dB during AC analysis.
 
 
 
