@@ -226,9 +226,16 @@ Gain= 29.045 dB
 | 1:3   | 150um | 304.5um | 101.5um  |
 | 1:4   | 158.4um | 406um| 101.5um  |
 | 2:1   | 66.8 um | 101.5um | 203um  |
-- length= 180 nm
-![50011](https://github.com/user-attachments/assets/0e78c719-17e5-4077-b5ee-7e00a1072ab5)
+- length= 180 nM
 
+ ## 1:1 ratio for length 500nm:
+ ### DC ANALYSIS:
+![50011](https://github.com/user-attachments/assets/0e78c719-17e5-4077-b5ee-7e00a1072ab5)
+- Width of M3,M2 is 101.5 um.
+- Width of M1 is 193 um.
+
+  ### AC ANALYSIS:
+  
 
 
 ## Inference:
@@ -269,11 +276,16 @@ This setup is useful when the circuit needs to drive more current.
 ## PART B
 
 ### DC ANALYSIS:
+![aachi11](https://github.com/user-attachments/assets/f42db0ca-9fbc-4209-8a18-9241a03a7366)
 
 ### TRANSIENT ANALYSIS:
+![aachi22](https://github.com/user-attachments/assets/f01ea5a9-d537-4160-befd-aa7b5063b690)
 
 ### AC ANALYSIS:
+![aachi33](https://github.com/user-attachments/assets/b3d6cc4a-8612-4ff5-9591-8c74b4208729)
+Gain=33.31 dB
 
+## Inference:
 
 
 
