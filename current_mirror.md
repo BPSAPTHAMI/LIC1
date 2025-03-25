@@ -42,7 +42,8 @@ Iref =Ix = Itotal/2 = 0.28mA
 
 ## Current mirror -  ratio 1:1 
 ### DC ANALYSIS:
-![aa11](https://github.com/user-attachments/assets/7c034319-a0e6-4f41-9da4-b1dc6ba17c8e)
+![1](https://github.com/user-attachments/assets/34ae19b2-224d-438c-a0ac-964872477c6c)
+
 Itotal=Iref+Ix
 
 For 1:1 ratio Iref=Ix
