@@ -227,6 +227,9 @@ Gain= 29.045 dB
 | 1:4   | 158.4um | 406um| 101.5um  |
 | 2:1   | 66.8 um | 101.5um | 203um  |
 - length= 180 nm
+![50011](https://github.com/user-attachments/assets/0e78c719-17e5-4077-b5ee-7e00a1072ab5)
+
+
 
 ## Inference:
 
