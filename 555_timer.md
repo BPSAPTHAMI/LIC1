@@ -8,25 +8,25 @@ A multivibrator is an electronic circuit that switches between two states (HIGH 
 ![image](https://github.com/user-attachments/assets/796379f8-93c5-432a-8739-2f204a63d23d)
 
 The types of multivibrators are:
-1.Astable Multivibrator
+- 1.Astable Multivibrator
 Also called free-running because it never stops switching states.
 It has no stable state.
 Produces continuous pulses at a fixed frequency and duty cycle.
 Made with two transistors, two capacitors, and some resistors.
-Used in oscillators, clocks, and pulse generators.
+- Used in oscillators, clocks, and pulse generators.
 
-2.Monostable Multivibrator
+- 2.Monostable Multivibrator
 Called one-shot because it produces only one pulse when triggered.
 Has one stable state and one temporary (unstable) state.
 When triggered, it gives a pulse of fixed length, then returns to stable.
 Also uses two transistors, two capacitors, and some resistors.
-Used for timers, delays, and pulse width modulation.
+- Used for timers, delays, and pulse width modulation.
 
-3.Bistable Multivibrator
+- 3.Bistable Multivibrator
 Known as a flip-flop.
 Has two stable states and stays in either until triggered to switch.
 Made with two transistors, capacitors, and resistors.
-Used as memory elements, switches, or latches in digital circuits.
+- Used as memory elements, switches, or latches in digital circuits.
 
 
 ### How the 555 Timer Monostable Multivibrator Works
@@ -54,20 +54,20 @@ LTspice circuit diagram
 
 ![image](https://github.com/user-attachments/assets/e8ea12d8-bdf2-4794-9fe7-93d78468a41d)
 - V1 is Output of the Astable Multivibrator
--V2 is Capacitor Voltage of Astable Multivibrator
-V3 is Output of Differentiator
-V4 is Capacitor Voltage of Monostable Multivibrator
-Vout is Output of Monostable Multivibrator
-pulse width is 0.5ms
+- V2 is Capacitor Voltage of Astable Multivibrator
+- V3 is Output of Differentiator
+- V4 is Capacitor Voltage of Monostable Multivibrator
+- Vout is Output of Monostable Multivibrator
+- pulse width is 0.5ms
 
 ### Inference
-Changing R and C changes output pulse time.
+- Changing R and C changes output pulse time.
 RC=T
-Normal 555 astable circuit can’t always give exact ON/OFF times needed.
-Using an inverter (NOT gate) can help flip signals and get desired timing.
-Small resistors and capacitors allow short pulses (under 1 ms).
-Differentiator circuits help detect exact signal edges for precise triggering.
-The monostable 555 setup produces clean pulses independent of trigger length, useful for timing and signal shaping.
+- Normal 555 astable circuit can’t always give exact ON/OFF times needed.
+- Using an inverter (NOT gate) can help flip signals and get desired timing.
+- Small resistors and capacitors allow short pulses (under 1 ms).
+- Differentiator circuits help detect exact signal edges for precise triggering.
+- The monostable 555 setup produces clean pulses independent of trigger length, useful for timing and signal shaping.
 
 
 
