@@ -53,8 +53,8 @@ LTspice circuit diagram
 ![image](https://github.com/user-attachments/assets/423fa657-9279-45dd-8fc0-690fb4b0a6e6)
 
 ![image](https://github.com/user-attachments/assets/e8ea12d8-bdf2-4794-9fe7-93d78468a41d)
-V1 is Output of the Astable Multivibrator
-V2 is Capacitor Voltage of Astable Multivibrator
+*V1 is Output of the Astable Multivibrator
+*V2 is Capacitor Voltage of Astable Multivibrator
 V3 is Output of Differentiator
 V4 is Capacitor Voltage of Monostable Multivibrator
 Vout is Output of Monostable Multivibrator
