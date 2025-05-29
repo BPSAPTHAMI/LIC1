@@ -118,7 +118,6 @@ Practical Cases
 
 
 
----
 
 Key Points and Improvements
 
@@ -136,9 +135,8 @@ The monostable 555 setup produces clean pulses independent of trigger length, us
 
 
 
----
 
-If you want, I can help with a neat summary, circuit diagram, or example calculations!
+
 
 
 
